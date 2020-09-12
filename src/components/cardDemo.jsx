@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "C:/Users/marzieh/Desktop/kd/kd-v1/kd/src/components/cardDemo.css";
+import "D:/frontProject/kd/src/components/cardDemo.css";
 import Card from "./card";
 
 class CardDemo extends Component {

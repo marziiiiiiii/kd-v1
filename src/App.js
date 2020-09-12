@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Cards from "./components/cards";
+import Card from "./components/card";
 import Navbar from "./components/navbar";
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <React.Fragment>
       <Navbar />
       <main className="container">
-        <Cards />
+        <Card />
       </main>
     </React.Fragment>
   );

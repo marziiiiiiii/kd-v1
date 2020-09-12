@@ -11,12 +11,8 @@
   left: 0;
   right: 0;
   z-index: 1;
-  display: block;
+  /* display: block; */
   background-image: url("https://i.pinimg.com/564x/45/4e/2c/454e2c220ed5bc5268b022f944e5bcc5.jpg");
-
-  /* "https://i.pinimg.com/564x/97/a8/2f/97a82fe9c226b1346175707fe2db57d9.jpg"); */
-
-  /* "https://i.imgur.com/lL6tQfy.png"); */
   width: 100%;
   height: 200%;
   -webkit-filter: blur(5px);
@@ -30,10 +26,52 @@
 }
 
 .content {
-  position: sticky;
+  position: relative;
   left: 0;
   right: 0;
   z-index: 9999;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 20em;
+  margin-right: 20em;
 }
+
+
+
+/* 
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  color: blue;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */

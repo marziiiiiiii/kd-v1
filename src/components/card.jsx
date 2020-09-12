@@ -1,19 +1,32 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.css";
-import "C:/Users/marzieh/Desktop/kd/kd-v1/kd/src/components/card.css";
-import ch from "C:/Users/marzieh/Desktop/kd/kd-v1/kd/src/components/card.html";
-import bImg from "C:/Users/marzieh/Desktop/kd/kd-v1/kd/src/images/birthday/b3.jpg";
+import "D:/frontProject/kd/src/components/card.css";
+import ch from "D:/frontProject/kd/src/components/card.html";
+import bImg from "D:/frontProject/kd/src/images/birthday/b3.jpg";
 // import Palette from "react-palette";
 
 class Card extends Component {
+
+  constructor(props){
+    super(props);
+    
+    this.setTitle= this.setTitle.bind(this);
+
+  }
+
+
   state = {
     type: "birthday",
     name: "no name",
+    title: "",
     fBirthURL:
       "https://i.pinimg.com/564x/97/a8/2f/97a82fe9c226b1346175707fe2db57d9.jpg",
     bBirthURL:
-      "https://i.pinimg.com/564x/97/a8/2f/97a82fe9c226b1346175707fe2db57d9.jpg",
+      "https://www.ohpaper.co.uk/environment/cache/images/0_0_productGfx_04f74b8cbf5cb75779a349944d9ac9bd.jpg",
   };
+
+//   var __html = require('./card.html');
+// var template = { __html: __html };
 
   //   var ___html = "card.html";
   // var template = { __html: __html };
@@ -21,8 +34,9 @@ class Card extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="bgstyle"></div>
-        <div className="text-center content m-4">
+
+        <div className="bgstyle img-responsive"></div>
+        <div className=" text-center content m-4">
           <div>
             <h3 class="m-4">{this.state.type} card </h3>
           </div>
@@ -36,10 +50,12 @@ class Card extends Component {
                     <input
                       id="theTitle"
                       type="text"
+                      value={this.state.title}
+                      onChange={this.setTitle}
                       class="form-control"
                       placeholder="Title"
                     />
-                    <h7>{this.writeTitle}</h7>
+                    
                   </div>
                   <div class="m-2">
                     <input
@@ -65,10 +81,31 @@ class Card extends Component {
             </div>
             <div className="col">
               <p>front</p>
-              <img className="rounded " src={this.state.fBirthURL} alt="" />
+              <div className="">
+                <img className="rounded img-responsive" src={this.state.fBirthURL} alt="front" />
+                <div className="" >{this.state.title} jfjkedfh</div>
+                
+              </div>
+              
             </div>
           </div>
         </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <div className="text-center content m-4">
           <div className="row">
@@ -80,10 +117,11 @@ class Card extends Component {
                     <input
                       id="theThank"
                       type="text"
+                      value={this.state.title}
                       class="form-control"
                       placeholder="thank you for attention"
                     />
-                    <h7>{this.writeTitle}</h7>
+                    <h7>{this.setTitle}</h7>
                   </div>
                   <div class="m-2">
                     <input
@@ -98,10 +136,27 @@ class Card extends Component {
             </div>
             <div className="col">
               <p>back</p>
-              <img className="rounded " src={this.state.bBirthURL} alt="" />
+              <img className="rounded " src={this.state.bBirthURL} alt="back" />
             </div>
           </div>
         </div>
+
+
+
+        
+
+
+
+        {/* <div className="co">
+                <img className="rounded " src={this.state.fBirthURL} alt="front" />
+                <div className="bottom-left">Bottom Left</div>
+                <div className="top-left">Top Left</div>
+                <div className="top-right">Top Right</div>
+                <div className="bottom-right">Bottom Right</div>
+                <div className="centered">Centered</div>
+              </div> */}
+
+
       </React.Fragment>
     );
   }
@@ -111,9 +166,10 @@ class Card extends Component {
     return n === "marzi" ? "warning " : " your name n ";
   }
 
-  writeTitle() {
-    var t = document.getElementById("theTitle").value;
-    return t;
+  setTitle(event) {
+    
+    this.setState({title: event.target.value})
+
   }
 }
 export default Card;
