@@ -35,6 +35,7 @@ class CardDemo extends Component {
         />
         {this.state.c && <Card />}
 
+
         {/* {this.state.showComponent ? <Card /> : <p>ajaab</p>} */}
       </div>
     );

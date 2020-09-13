@@ -1,17 +1,17 @@
-.card-element {
+/* .card-element {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
   height: 50%;
-}
+} */
 
 .bgstyle {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   z-index: 1;
-  /* display: block; */
+  display: block;
   background-image: url("https://i.pinimg.com/564x/45/4e/2c/454e2c220ed5bc5268b022f944e5bcc5.jpg");
   width: 100%;
   height: 200%;
