@@ -82,7 +82,7 @@ class Card extends Component {
             <div className="col">
               <p>front</p>
               <div className="">
-                {/* <img className="rounded img-responsive" src={this.state.fBirthURL} alt="front" /> */}
+                <img className="rounded img-responsive" src={this.state.fBirthURL} alt="front" />
                 <div className="" >{this.state.title} jfjkedfh</div>
                 
               </div>
