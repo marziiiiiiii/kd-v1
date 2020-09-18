@@ -2,9 +2,15 @@
   max-width: 10em;
   max-height: 20em;
   background-color: aqua;
+  
 }
 
+.d-img .demo:hover  {
+  /* opacity: 0.3; */
+  background-color: yellow;
+}
 
+/* 
 .container {
   position: relative;
   width: 50%;
@@ -29,10 +35,7 @@
   -ms-transform: translate(-50%, -50%)
 }
 
-.demo:hover  {
-  opacity: 0.3;
-  background-color: yellow;
-}
+
 
 .container:hover .middle {
   opacity: 1;
@@ -43,4 +46,4 @@
   color: white;
   font-size: 16px;
   padding: 16px 32px;
-}
+} */

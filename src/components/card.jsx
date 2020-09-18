@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.css";
-import "D:/frontProject/kd/src/components/card.css";
-import ch from "D:/frontProject/kd/src/components/card.html";
-import bImg from "D:/frontProject/kd/src/images/birthday/b3.jpg";
+import "D:/work/frontProject/kd/src/components/card.css";
+import ch from "D:/work/frontProject/kd/src/components/card.html";
+import bImg from "D:/work/frontProject/kd/src/images/birthday/b3.jpg";
 // import Palette from "react-palette";
 
 class Card extends Component {
