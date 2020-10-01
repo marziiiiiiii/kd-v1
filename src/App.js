@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.css";
-import Card from "./components/card";
-import Cards from "./components/cards";
-import Navbar from "./components/navbar";
+import Card from "./components/card/card";
+import CardDemoList from "./components/cardDemoList/cardDemoList";
+import Navbar from "./components/navbar/navbar";
 // import {
 //   BrowserRouter as Router,
 //   Switch,
@@ -18,7 +18,7 @@ function App() {
       <React.Fragment>
         <Navbar />
         <main className="container">
-          <Cards />
+          <CardDemoList />
           {/* {this.props.chil} */}
         </main>
       </React.Fragment>

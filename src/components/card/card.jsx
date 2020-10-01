@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "D:/work/frontProject/kd/src/components/card.css";
-import ch from "D:/work/frontProject/kd/src/components/card.html";
 import bImg from "D:/work/frontProject/kd/src/images/birthday/b3.jpg";
 // import Palette from "react-palette";
 
@@ -13,7 +12,6 @@ class Card extends Component {
     this.setTitle= this.setTitle.bind(this);
 
   }
-
 
   state = {
     type: "birthday",
@@ -27,7 +25,6 @@ class Card extends Component {
 
 //   var __html = require('./card.html');
 // var template = { __html: __html };
-
   //   var ___html = "card.html";
   // var template = { __html: __html };
 

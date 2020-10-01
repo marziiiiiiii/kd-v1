@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "D:/work/frontProject/kd/src/components/cardDemo.css";
-import Card from "./card";
+import Card from "./card/card";
 
 
 //todo
