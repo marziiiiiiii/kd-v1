@@ -1,8 +1,6 @@
 import React from "react";
 import "./App.css";
-import Card from "./components/card/card";
-import CardDemoList from "./components/cardDemoList/cardDemoList";
-import Navbar from "./components/navbar/navbar";
+import Home from "./components/home/home";
 // import {
 //   BrowserRouter as Router,
 //   Switch,
@@ -15,14 +13,11 @@ import Navbar from "./components/navbar/navbar";
 function App() {
   return (
     // <Router>
-      <React.Fragment>
-        <Navbar />
-        <main className="container">
-          <CardDemoList />
-          {/* {this.props.chil} */}
-        </main>
-      </React.Fragment>
+      
+    <React.Fragment>
+      <Home />
     
+    </React.Fragment> 
   );
 }
 

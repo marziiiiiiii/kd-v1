@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.css";
-import "D:/work/frontProject/kd/src/components/card.css";
+import "./card.css";
 import bImg from "D:/work/frontProject/kd/src/images/birthday/b3.jpg";
 // import Palette from "react-palette";
 
