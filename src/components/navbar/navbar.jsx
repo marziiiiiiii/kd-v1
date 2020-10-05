@@ -1,12 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
+import "./navbar.css"
 
 const Navbar = () => {
   return ( <nav
     className="navbar navbar-light  navbar-expand-lg"
     // style={{ backgroundColor: "#e3f2fd" }}
   >
-    <a className="navbar-brand" href="#">
-      Kart Davat
+    <a className="navbar-brand title" href="#">
+      کارت ها
     </a>
     <button
       className="navbar-toggler"
@@ -22,16 +23,16 @@ const Navbar = () => {
     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div className="navbar-nav">
         <a className="nav-item nav-link active" href="#">
-          Home <span className="sr-only">(current)</span>
+          دسته بندی ها <span className="sr-only">(current)</span>
         </a>
         <a className="nav-item nav-link" href="#">
-          Features
+          پر بازدید ها
         </a>
         <a className="nav-item nav-link" href="#">
-          Pricing
+          رایگان!
         </a>
         <a className="nav-item nav-link disabled" href="#">
-          Disabled
+          ورود/ثبت نام
         </a>
       </div>
     </div>

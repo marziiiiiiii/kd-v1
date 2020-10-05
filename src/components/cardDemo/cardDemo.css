@@ -2,6 +2,7 @@
   max-width: 10em;
   max-height: 10em;
   display: flex;
+  /* justify-content: center; */
   flex-direction: column;
   background-color: rgb(106, 184, 180);
   border: 1px solid rgb(206, 226, 31);
@@ -12,12 +13,11 @@
   backface-visibility: hidden;
   transform: translateZ(0);
   transition: transform 0.25s ease-out;
-
 }
 
-.demo:hover  {
+.demo:hover {
   transform: scale(1.05);
-  
+
   border: 1px solid rgb(230, 8, 145);
   /* opacity: 0.3; */
   /* background-color: yellow; */
