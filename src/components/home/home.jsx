@@ -28,7 +28,6 @@ class home extends Component {
   handleChange = (ev) => {
     this.setState({ searchField: ev.target.value });
     //   , () =>
-    // console.log(searchField) )
   };
 
   render() {
