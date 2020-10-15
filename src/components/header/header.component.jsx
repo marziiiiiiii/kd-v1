@@ -6,21 +6,22 @@ import "./header.styles.scss";
 
 const Header = () => (
   <div className="header">
-    <Link calssName="logo-container" to="/">
-      <Logo className="logo" />
-    </Link>
     <div className="options">
-      <Link calssName="" style={{ padding: "18px " }} to="/contact">
+      <Link calssName="op" style={{ padding: "10px " }} to="/contact">
         تماس با ما
       </Link>
-      <Link calssName="" style={{ padding: "18px " }} to="/collections">
+      <Link calssName="" style={{ padding: "10px " }} to="/collections">
         همه دسته بندی ها
       </Link>
 
-      <Link calssName="" style={{ padding: "18px " }} to="/collections">
+      <Link calssName="" style={{ padding: "10px " }} to="/signin">
         ورود / ثبت نام
       </Link>
+      
     </div>
+    <Link calssName="logo-container" to="/">
+        <Logo className="logo" />
+      </Link>
   </div>
 );
 

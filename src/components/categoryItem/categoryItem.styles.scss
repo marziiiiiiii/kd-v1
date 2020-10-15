@@ -1,15 +1,16 @@
-.category {
-  min-width: 30%;
+.category-item {
+  min-width: 25%;
   height: 240px;
-  flex: 1 1 auto;
+  flex:  1 1 auto;
   display: flex;
-  // flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid black;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-end;
+  border: 3px solid rgba(98, 67, 103, 0.253);
   margin: 0 7.5px 15px;
   overflow: hidden;
   border-radius: 20px 20px 20px 20px;
+  
 
   &:hover {
     cursor: pointer;
@@ -26,7 +27,7 @@
 
   &.large {
     height: 300px;
-    width: 850px;
+    width: 670px;
   }
   &:first-child {
     margin-right: 7.5px;
@@ -53,6 +54,9 @@
     position: absolute;
     background-color: white;
     opacity: 0.7;
+    border-radius: 50px 20px 50px 20px;
+    margin-top: 20px;
+    margin-right: 20px;
 
     .title {
       font-weight: bold;

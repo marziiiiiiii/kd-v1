@@ -12,7 +12,7 @@ export const Category = ({
 }) => {
   return (
     <div
-      className={`${size} category`}
+      className={`${size} category-item`}
       onClick={() => history.push(`${match.url}${linkUrl}`)}
     >
       <div

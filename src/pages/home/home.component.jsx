@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import CategoryList from "../../components/categorys/categorys.component";
+import Categorys from "../../components/categorys/categorys.component";
 import "./home.styles.scss";
 
 class home extends Component {
@@ -8,7 +8,7 @@ class home extends Component {
     return (
       <div className="home">
         <div>
-          <CategoryList />
+          <Categorys />
         </div>
       </div>
     );

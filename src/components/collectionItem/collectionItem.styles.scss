@@ -2,17 +2,17 @@
   width: 22%;
   display: flex;
   flex-direction: column;
-  height: 500px;
+  height: 15em;
   align-items: center;
 
   .image {
-    width: 100%;
+    width: 90%;
     height: 95%;
     background-size: cover;
     background-position: center;
     margin-bottom: 5px;
     border-radius: 6px;
-    cursor: pointer;;
+    cursor: pointer;
   }
 
   .collection-footer {
@@ -20,15 +20,22 @@
     height: 5%;
     display: flex;
     justify-content: space-between;
-    font-size: 18px;
+    font-size: 14px;
 
     .name {
       width: 90%;
       margin-bottom: 15px;
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 20px;
     }
 
     .price {
+      display: flex;
+      justify-content: flex-end;
       width: 10%;
+      margin-left: 36px;
+      
     }
   }
 }
