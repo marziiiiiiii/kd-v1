@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import FormInput from "../formInput/formInput.component";
-import CustomButtom from "../customButton/customButton.component"
+import CustomButtom from "../customButton/customButton.component";
 import "./signIn.styles.scss";
+import { signInWithGoogle } from "../parse/parse.utils";
 
 class SignIn extends Component {
   constructor(props) {
@@ -43,8 +44,12 @@ class SignIn extends Component {
             handleChange={this.handleChange}
             required
           />
-
-          <CustomButtom type="submit ">ورود</CustomButtom> 
+          <div className="sign-in-buttons">
+            <CustomButtom style={{marginRight:"5px"}} type="submit ">ورود</CustomButtom>
+            <CustomButtom style={{marginLeft:"5px"}} onClick={signInWithGoogle} isGoogleSignIn>
+              ورود با گوگل
+            </CustomButtom>
+          </div>
         </form>
       </div>
     );
