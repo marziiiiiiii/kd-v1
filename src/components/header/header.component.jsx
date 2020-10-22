@@ -1,33 +1,33 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { ReactComponent as Logo } from "../../asserts/4.3 envelope.svg";
-import { auth } from "../parse/parse.utils";
+import { auth } from "../firebase/firebase.utils";
 import "./header.styles.scss";
 
 const Header = ({ currentUser }) => (
   <div className="header">
     <div className="options">
-      <Link calssName="each-option"style={{ padding: "10px " }} to="/contact">
+      <Link className="option" to="/contact">
         تماس با ما
       </Link>
 
-      <Link calssName="each-option"style={{ padding: "10px " }} to="/collections">
+      <Link className="option" to="/collections">
         همه دسته بندی ها
       </Link>
 
       {currentUser ? (
-        <div className="each-option"style={{ padding: "10px " }} onClick={ () => auth.signOut()}>
+        <div className="option" onClick={ () => auth.signOut()}>
           خروج از حساب کاربری
         </div>
       ) : (
-        <Link calssName="each-option"style={{ padding: "10px " }}  to="/signin">
+        <Link className="option"  to="/signin">
           ورود / ثبت نام
         </Link>
       )}
     </div>
 
-    <Link calssName="logo-container" to="/">
-      <Logo className="logo" />
+    <Link className="logo" to="/">
+      <Logo  />
     </Link>
   </div>
 );

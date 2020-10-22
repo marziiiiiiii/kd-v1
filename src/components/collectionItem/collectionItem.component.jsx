@@ -6,8 +6,14 @@ const CollectionItem = ({ id, name, price, imageUrl }) => (
     <div className="image" style={{ backgroundImage: `url(${imageUrl})` }} />
     <div className="collection-footer">
       <div className="price">
-        <h8 style={{ fontSize: "11px" , marginTop: "2px" }}>تومان</h8>
-        <span>{price}</span>
+        {price === 0 ? (
+          <h8 className="free">رایگان</h8>
+        ) : (
+          <div className="non-free ">
+            <h8>تومان</h8>
+            <span>{price}</span>
+          </div>
+        )}
       </div>
       <span className="name">{name}</span>
     </div>
@@ -15,3 +21,4 @@ const CollectionItem = ({ id, name, price, imageUrl }) => (
 );
 
 export default CollectionItem;
+//تومان

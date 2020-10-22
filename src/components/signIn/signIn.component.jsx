@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import FormInput from "../formInput/formInput.component";
 import CustomButtom from "../customButton/customButton.component";
 import "./signIn.styles.scss";
-import { signInWithGoogle } from "../parse/parse.utils";
+import { signInWithGoogle } from "../firebase/firebase.utils";
 
 class SignIn extends Component {
   constructor(props) {
@@ -45,9 +45,10 @@ class SignIn extends Component {
             required
           />
           <div className="sign-in-buttons">
-            <CustomButtom style={{marginRight:"5px"}} type="submit ">ورود</CustomButtom>
-            <CustomButtom style={{marginLeft:"5px"}} onClick={signInWithGoogle} isGoogleSignIn>
-              ورود با گوگل
+            <CustomButtom type="submit " useMarginRight>ورود</CustomButtom>
+            <CustomButtom onClick={signInWithGoogle} isGoogleSignIn >
+              {" "}
+              ورود با گوگل{" "}
             </CustomButtom>
           </div>
         </form>

@@ -13,6 +13,7 @@
   font-weight: bolder;
   border: none;
   cursor: pointer;
+  // margin: 3px;
 
   &:hover {
     background-color: rgb(98, 67, 103);
@@ -29,6 +30,9 @@
       color: white;
       border: none;
     }
+  }
+  &.margin-right{
+    margin-right: 5px;
   }
 }
 .sign-in-buttons {

@@ -6,7 +6,8 @@ import CardDemoList from "./components/cardDemoList/cardDemoList";
 import Collections from "./pages/collections/colections.component";
 import Header from "./components/header/header.component";
 import SignInAndSignUp from "./pages/signInAndSignUp/signInAndSignUp.component";
-import { auth } from "./components/parse/parse.utils";
+import Contact from "./pages/contact/contact.component"
+import { auth } from "./components/firebase/firebase.utils";
 
 class App extends Component {
   constructor() {
@@ -16,17 +17,17 @@ class App extends Component {
     };
   }
 
-  // unsubscribeFromAuth = null;
+  unsubscribeFromAuth = null;
 
-  // componentDidMount() {
-  //   this.unsubscribeFromAuth = auth.onAuthStateChanged((user) => {
-  //     this.setState({ currentUser: user });
-  //   });
-  // }
+  componentDidMount() {
+    this.unsubscribeFromAuth = auth.onAuthStateChanged((user) => {
+      this.setState({ currentUser: user });
+    });
+  }
 
-  // componentWillUnmount() {
-  //   this.unsubscribeFromAuth();
-  // }
+  componentWillUnmount() {
+    this.unsubscribeFromAuth();
+  }
 
   render() {
     return (
@@ -37,6 +38,7 @@ class App extends Component {
           <Route exact path="/birthday" component={CardDemoList} />
           <Route exact path="/collections" component={Collections} />
           <Route exact path="/signin" component={SignInAndSignUp} />
+          <Route exact path="/contact" component={Contact} />
         </Switch>
       </div>
     );
