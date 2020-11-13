@@ -7,6 +7,7 @@ import Collections from "./pages/collections/colections.component";
 import Header from "./components/header/header.component";
 import SignInAndSignUp from "./pages/signInAndSignUp/signInAndSignUp.component";
 import Contact from "./pages/contact/contact.component"
+import Card from "./components/card/card.component"
 import { auth } from "./components/firebase/firebase.utils";
 
 class App extends Component {
@@ -39,6 +40,8 @@ class App extends Component {
           <Route exact path="/collections" component={Collections} />
           <Route exact path="/signin" component={SignInAndSignUp} />
           <Route exact path="/contact" component={Contact} />
+          
+          <Route exact path="/card" component={Card} />
         </Switch>
       </div>
     );
